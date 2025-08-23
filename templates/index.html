@@ -7,7 +7,47 @@
     <title>Flowbite Flask</title>
     <link rel="stylesheet" href="{{url_for('static',filename='dist/output.css')}}">
 </head>
-<body>
-    <h1 class="text-blue-600">Hello, Flask!</h1>
+<body >
+  <!--nav bar-->
+  <nav class="grid grid-cols-[60%_40%]">
+    <!-- Left side (blue) -->
+    <div class="bg-[#00509D] text-[#FDC500] p-4 flex justify-between items-center">
+      <!-- Logo on the left -->
+      <img class="w-20 ml-30" src="{{ url_for('static', filename='assets/icons/logo.svg')}}" alt="Logo">
+
+      <!-- Links on the right -->
+      <div class="flex gap-[5vw]">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline mr-5">About Me</a>
+      </div>
+    </div>
+
+    <!-- Right side (yellow) -->
+    <div class="bg-[#FDC500] text-[#00509D] p-4 flex justify-start gap-[5vw] items-center">
+      <a href="#services" class="hover:underline ml-5">Services</a>
+      <a href="#work" class="hover:underline">My Work</a>
+      <a href="#resume" class="hover:underline">Resume</a>
+    </div>
+  </nav>
+
+
+  <!--home page-->
+  <div class="relative grid grid-cols-[60%_40%] h-screen">
+    <div class="bg-[#00509D] ">
+      <div class="ml-[200px]">
+        <h1 class="text-[#FDC500] text-5xl font-bold mt-20">Frontend</h1>
+        <h1 class="text-[#FDC500] text-5xl font-bold">Developer.</h1>
+        <p class="text-[#FDC500] text-left max-w-[40ch] text-xl mt-5 leading-8">
+          I create responsive landing pages, booking systems, and full web &
+           mobile apps that convert visitors into paying customers.
+        </p>
+      </div>
+    </div>
+    <div class="bg-[#FDC500]">
+    </div>
+    <div class="absolute left-[55%] mt-5">
+      <img class="w-5/6 h-auto" src="{{ url_for('static', filename='assets/mainphoto.svg')}}" alt="photo">
+    </div>
+  </div>
 </body>
 </html>
