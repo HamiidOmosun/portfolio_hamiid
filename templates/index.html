@@ -72,6 +72,139 @@
 
     <!--about me-->
     <section class="bg-[#F2F9FF] h-screen">
+      <div class="mx-60 py-20">
+        <div class="bg-white grid grid-cols-2 gap-10 text-sm">
+          <div class="max-w-[50ch]">
+            <h1 class="text-4xl font-bold text-[#00509D] mb-5">Development</h1>
+            <p class="text-[#00509D] leading-6">
+              I’m not just writing code for the sake of it — I 
+              build digital experiences that breathe. Whether it’s 
+              shaping smooth mobile interactions or crafting 
+              responsive web layouts, I focus on details that make 
+              users feel at home. My strength lies in connecting design 
+              thinking with front-end precision, delivering products that 
+              are both functional and visually engaging.
+            </p>
+          </div>
+          <div class="max-w-[50ch] mt-[250px]">
+            <h1 class="text-4xl font-bold text-[#00509D] mb-5">Problem-Solving</h1>
+            <p class="text-[#00509D] leading-6">
+              Coming from a background in mechanical engineering, I 
+              approach challenges with an analytical mindset and a 
+              builder’s discipline. I break down complex ideas into 
+              practical solutions, balancing creativity with structure. 
+              That mix of engineer’s rigor and designer’s intuition is 
+              what makes me a strong fit for teams that want products not 
+              only shipped, but shipped right.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--services-->
+    <section class="bg-[#00509D] h-screen">
+      <div class="grid grid-cols-2 mx-30">
+        <div class="flex justify-center items-center h-screen">
+          <div class="flex flex-col justify-center">
+            <h1 class="text-3xl text-[#FDC500] text-left font-bold mb-3">Experience.</h1>
+            <p class="text-sm text-[#FDC500] max-w-[60ch] leading-5.5">
+              My work sits at the intersection of front-end engineering and 
+              product thinking — translating complex requirements into digital 
+              experiences that feel intuitive, fast, and scalable. From booking platforms to 
+              mobile applications, I focus on delivering solutions that are not only 
+              functional but crafted with care for the people who use them.
+
+              Currently, I work as a Senior Frontend Engineer, where I 
+              specialize in building responsive, high-performance mobile applications 
+              and admin dashboards. My role involves shaping architectures that 
+              scale, refining UI interactions, and ensuring accessibility across 
+              devices.
+
+              Before this, I served as Lead Frontend Developer at Sira, 
+              where I guided the team through designing and shipping a robust 
+              platform used daily by thousands of users. My focus there was on 
+              bringing structure to the development process while pushing for elegant, 
+              user-first design.
+
+              Earlier in my career, I contributed to building booking systems and 
+              enterprise-grade admin panels, bridging the gap between engineering 
+              requirements and user experience. These projects gave me a foundation in 
+              designing workflows that make complex tasks simple and reliable.
+
+              Across roles, I’ve developed a reputation for 
+              combining engineering precision with design sensitivity — a mindset 
+              that helps me deliver products that don’t just work, but work beautifully.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <img class="w-96" src="{{ url_for('static', filename='assets/icons/dev.svg')}}" alt="Logo">
+        </div>
+      </div>
+    </section>
+
+    <!--services-->
+    <section class="bg-[#F2F9FF] h-screen">
+      <div class="grid grid-cols-2 gap-0.5 mx-40 py-30">
+        <div class="bg-white py-10 pl-10">
+          <h1 class="text-4xl text-[#00509D] font-bold max-w-[8ch] mb-5">I build web apps</h1>
+          <p class="text-xl text-[#00509D] max-w-[30ch]">
+            I create responsive landing pages, booking systems, and full web & mobile 
+            apps that convert 
+          </p>
+          <button class=" border-[#00509D] border-2 text-[#00509D] py-2 px-10 mt-10">See my work</button>
+        </div>
+        <div class="bg-white py-10 pl-10">
+          <h1 class="text-4xl text-[#00509D] font-bold max-w-[8ch] mb-5">I build web apps</h1>
+          <p class="text-xl text-[#00509D] max-w-[30ch]">
+            I create responsive landing pages, booking systems, and full web & mobile 
+            apps that convert 
+          </p>
+          <button class=" border-[#00509D] border-2 text-[#00509D] py-2 px-10 mt-10">See my work</button>
+        </div>
+      </div>
+    </section>
+
+    <!--contact me-->
+    <section class="bg-[#F2F9FF] h-screen">
+      <div class="flex justify-center items-center h-screen">
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-4xl text-[#00509D] font-bold mb-5">Get in Touch.</h1>
+          <p class="text-2xl text-[#00509D] mb-5 max-w-[40ch] text-center">
+            Got a question or proposal or just want to say hello? Go 
+            ahead
+          </p>
+          <form>
+            <div class="grid grid-cols-2 mb-4 gap-5">
+              <div>
+                <label class="block mb-4" for="name">Your name:</label>
+                <input class="w-64 border-b-2 border-[#00509D] focus:outline-none placeholder-[#00509D] pb-[3px]" placeholder="Enter your Name" type="text" id="name" name="name">
+              </div>
+              <div>
+                <label class="block mb-4" for="email">Your email:</label>
+                <input class="mb-8 w-64 border-b-2 border-[#00509D] focus:outline-none placeholder-[#00509D] pb-[3px]" placeholder="Enter your Email" type="Email" id="email" name="email">
+              </div>
+            </div>
+            <label class="block mb-4" for="message">Your message:</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="2" 
+              class="w-full border-b-2 border-[#00509D] focus:outline-none placeholder-[#00509D] p-2 resize-none overflow-y-scroll text-left placeholder:text-left"
+              placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on this to discuss it..."
+            ></textarea>
+          </form>
+          <div>
+            <button class=" border-[#00509D] border-2 text-[#00509D] py-2 px-10 mt-10">send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="bg-[#00296B] h-screen">
+
     </section>
   </div>
 
