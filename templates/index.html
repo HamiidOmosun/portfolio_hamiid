@@ -13,21 +13,21 @@
 
     <section id="home" class="h-screen">
                 <!--nav bar-->
-      <nav class="grid grid-cols-[60%_40%]">
+      <nav class="md:grid md:grid-cols-[60%_40%]">
         <!-- Left side (blue) -->
-        <div class="bg-[#00509D] text-[#FDC500] p-4 flex justify-between items-center">
+        <div class="bg-[#00509D] text-[#FDC500] md:p-4 md:flex md:justify-between md:items-center">
           <!-- Logo on the left -->
-          <img class="w-30 ml-30" src="{{ url_for('static', filename='assets/icons/logo.svg')}}" alt="Logo">
+          <img class="md:w-30 md:ml-30" src="{{ url_for('static', filename='assets/icons/logo.svg')}}" alt="Logo">
 
           <!-- Links on the right -->
-          <div class="flex gap-[5vw]">
+          <div class="md:flex md:gap-[5vw]">
             <a href="#home" class="hover:underline">Home</a>
             <a href="#about" class="hover:underline mr-5">About Me</a>
           </div>
         </div>
 
         <!-- Right side (yellow) -->
-        <div class="bg-[#FDC500] text-[#00509D] p-4 flex justify-start gap-[5vw] items-center">
+        <div class="md:bg-[#FDC500] md:text-[#00509D] md:p-4 md:flex md:justify-start md:gap-[5vw] md:items-center">
           <a href="#services" class="hover:underline ml-5">Services</a>
           <a href="#work" class="hover:underline">My Work</a>
           <a href="#resume" class="hover:underline">Resume</a>
@@ -35,19 +35,19 @@
       </nav>
 
       <!--home page-->
-      <div class="relative grid grid-cols-[60%_40%] flex-1">
+      <div class="md:relative md:grid md:grid-cols-[60%_40%] md:flex-1 grid grid-rows-2-[80%_20%]">
         <div class="bg-[#00509D]">
-          <div class="ml-[200px]">
-            <h1 class="text-[#FDC500] text-5xl font-bold mt-20">Frontend</h1>
-            <h1 class="text-[#FDC500] text-5xl font-bold">Developer.</h1>
-            <p class="text-[#FDC500] text-left max-w-[40ch] text-xl mt-5 leading-8">
+          <div class="md:ml-[200px] text-center">
+            <h1 class="text-[#FDC500] md:text-5xl font-bold md:mt-20 mt-10 text-5xl">Frontend</h1>
+            <h1 class="text-[#FDC500] md:text-5xl font-bold text-4xl">Developer.</h1>
+            <p class="text-[#FDC500] md:text-left md:max-w-[40ch] md:text-xl md:mt-5 md:leading-8">
               I create responsive landing pages, booking systems, and full web &
               mobile apps that convert visitors into paying customers.
             </p>
-            <div class="absolute mt-[-30px]">
-              <img class="w-20 ms-[400px]" src="{{ url_for('static', filename='assets/icons/spiral.svg')}}" alt="Logo">
+            <div class="absolute md:mt-[-30px]">
+              <img class="w-20 md:ms-[400px]" src="{{ url_for('static', filename='assets/icons/spiral.svg')}}" alt="Logo">
             </div>
-            <div class="grid grid-cols-2 mt-[80px] text-sm gap-10 max-w-[60ch] text-[#FDC500] mb-20">
+            <div class="md:grid md:grid-cols-2 md:mt-[80px] md:text-sm md:gap-10 md:max-w-[60ch] text-[#FDC500] md:mb-20">
               <p>
                 Skilled at turning complex problems into elegant solutions,
                 building digital frameworks that scale, 
@@ -61,43 +61,54 @@
             </div>
           </div>
         </div>
-        <div class="bg-[#FDC500]">
-          <img class="w-20 mt-[450px] ml-[150px]" src="{{ url_for('static', filename='assets/icons/cylinder.svg')}}" alt="Logo">
+        <div class="bg-[#FDC500] h-64">
+          <img class="md:w-20 md:mt-[450px] md:ml-[150px]" src="{{ url_for('static', filename='assets/icons/cylinder.svg')}}" alt="Logo">
         </div>
-        <div class="absolute left-[55%] mt-5">
-          <img class="w-5/6 h-auto" src="{{ url_for('static', filename='assets/mainphoto.svg')}}" alt="photo">
+        <div class="absolute md:left-[55%] md:mt-5">
+          <img class="md:w-5/6 h-auto" src="{{ url_for('static', filename='assets/mainphoto.svg')}}" alt="photo">
         </div>
       </div>
     </section>
 
     <!--about me-->
     <section class="bg-[#F2F9FF] h-screen">
-      <div class="mx-60 py-20">
-        <div class="bg-white grid grid-cols-2 gap-10 text-sm">
-          <div class="max-w-[50ch]">
-            <h1 class="text-4xl font-bold text-[#00509D] mb-5">Development</h1>
-            <p class="text-[#00509D] leading-6">
-              I’m not just writing code for the sake of it — I 
-              build digital experiences that breathe. Whether it’s 
-              shaping smooth mobile interactions or crafting 
-              responsive web layouts, I focus on details that make 
-              users feel at home. My strength lies in connecting design 
-              thinking with front-end precision, delivering products that 
-              are both functional and visually engaging.
-            </p>
+      <div class="relative">
+        <div class="mx-60 py-20">
+          <div class=" bg-white grid grid-cols-2 gap-10 text-sm">
+            <div class="max-w-[50ch]">
+              <h1 class="text-4xl font-bold text-[#00509D] mb-5">Development</h1>
+              <p class="text-[#00509D] leading-6">
+                I’m not just writing code for the sake of it — I 
+                build digital experiences that breathe. Whether it’s 
+                shaping smooth mobile interactions or crafting 
+                responsive web layouts, I focus on details that make 
+                users feel at home. My strength lies in connecting design 
+                thinking with front-end precision, delivering products that 
+                are both functional and visually engaging.
+              </p>
+            </div>
+            <div class="max-w-[50ch] mt-[250px]">
+              <h1 class="text-4xl font-bold text-[#00509D] mb-5">Problem-Solving</h1>
+              <p class="text-[#00509D] leading-6">
+                Coming from a background in mechanical engineering, I 
+                approach challenges with an analytical mindset and a 
+                builder’s discipline. I break down complex ideas into 
+                practical solutions, balancing creativity with structure. 
+                That mix of engineer’s rigor and designer’s intuition is 
+                what makes me a strong fit for teams that want products not 
+                only shipped, but shipped right.
+              </p>
+            </div>
           </div>
-          <div class="max-w-[50ch] mt-[250px]">
-            <h1 class="text-4xl font-bold text-[#00509D] mb-5">Problem-Solving</h1>
-            <p class="text-[#00509D] leading-6">
-              Coming from a background in mechanical engineering, I 
-              approach challenges with an analytical mindset and a 
-              builder’s discipline. I break down complex ideas into 
-              practical solutions, balancing creativity with structure. 
-              That mix of engineer’s rigor and designer’s intuition is 
-              what makes me a strong fit for teams that want products not 
-              only shipped, but shipped right.
-            </p>
-          </div>
+        </div>
+        <div class="absolute top-64 right-20 ">
+          <img class="w-5/6 h-auto" src="{{ url_for('static', filename='assets/icons/star.svg')}}" alt="photo">
+        </div>
+        <div class="absolute top-30 left-1/2">
+          <img class="w-48 h-auto" src="{{ url_for('static', filename='assets/icons/bigcylinder.svg')}}" alt="photo">
+        </div>
+        <div class="absolute top-3/5 right-3/6 ">
+          <img class="w-86 h-auto" src="{{ url_for('static', filename='assets/icons/bigspiral.svg')}}" alt="photo">
         </div>
       </div>
     </section>
@@ -231,5 +242,6 @@
     setTimeout(() => { isScrolling = false; }, 500); // 1 second delay
   });
 </script>
+
 </body>
 </html>
